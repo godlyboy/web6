@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="kalk.js" defer></script> 
+		<title>prod</title>
+    <body>
+            <p>Введите стоимость: <input type="text" id="a"></p>
+            <p>Введите количество: <input type="text" id="b"></p>
+            <button onclick="resultproiz()">Узнать стоимость</button><p id="out"></p>
+        <hr>
+		<div class="сontainer">
+    <form>
+      <p>Кол-во вашего товара: <input type="text" name="number" placeholder="Кол-во"></p>
+      Тип товара:
+      <select name="prodType">
+        <option value="0">Молоко</option>
+        <option value="1">Овощи</option>
+        <option value="2">Алкогольные напитки</option>
+      </select>
+  
+      <div id="radios">
+        <label><input type="radio" name="prodOptions" value="option1"> Морковь </label>
+        <label><input type="radio" name="prodOptions" value="option2"> Помидоры </label>
+        <label><input type="radio" name="prodOptions" value="option3"> Огурцы</label>
+      </div>
+      <div id="checkboxes">
+        <label><input type="checkbox" name="prop1"> Вино </label>
+        <label><input type="checkbox" name="prop2"> Коньяк </label>
+        <label><input type="checkbox" name="prop3"> Шампанское</label>
+      </div>
+      <br>
+      <button id="butt" onclick="return calcu();"> Ваш результат: </button>
+      <div id="prodPrice"></div>
+    </form>
+    <hr>
+    <div id="result"> </div>
+  </div>
+	</body>
+</html>
