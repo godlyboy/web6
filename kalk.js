@@ -41,7 +41,10 @@ function calcu() {
     first[0] = Number.parseInt(first[0]);
     b[0] = Number.parseInt(b[0]);
     var res = first * b[0].value;
-    c.innerHTML = "Итог " + Math.abs(res);
+	if(res<=0)
+		alert("ВЫ СОВЕРШИЛИ ОШИБКУ,ВОЗМОЖНО,ВВЕЛИ ОТРИЦАТЕЛЬНЫЕ ЧИСЛА");
+	else
+    c.innerHTML = "Итог " + res;
     return false;
   }
 }
